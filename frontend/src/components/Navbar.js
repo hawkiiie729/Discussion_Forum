@@ -4,8 +4,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
-      <AppBar>
+    <div style={{marginBottom:'4.3rem'}}>
+      <AppBar >
         <Toolbar>
           <IconButton
             size="large"
@@ -13,9 +13,9 @@ const Navbar = () => {
             aria-label="open drawer"
             edge="start"
           >
-            <MenuIcon />
+           
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 ,textAlign:'center'}}>
             Discussion Forum
           </Typography>
           <Button> New Question</Button>
