@@ -8,9 +8,9 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "nodemon Backend/app.js",
+    "start": "nodemon app.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
-    "server": "nodemon Backend/app",
+    "server": "nodemon app",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node Backend/seeder",
