@@ -31,5 +31,5 @@ app.get("*", function (_, res) {
 app.use(notFound);
 app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
-console.log('hello');
+console.log('hello',PORT);
 app.listen(PORT, console.log(`server started on port ${PORT}`));
